@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style-type: none;
+}
+.background{
+    background: rgb(0,151,164);
+    background: linear-gradient(135deg, rgba(0,151,164,1) 0%, rgba(0,90,97,1) 50%);
+    width: 100vw;
+    height: 100vh;
+}
+.controls-panel{
+    top: 100px;
+    background-color: transparent;
+    width: 100%;
+    height: 200px;
+    padding: 0 100px;
+}
+#controls button {
+    font-size: 30px;
+    color: rgb(255, 255, 255,0.698);
+    margin-right: 20px;
+}
+.controls-panel .volume-panel .fa-volume-high{
+    color: rgb(255, 255, 255,0.698);
+}
+.controls-panel #controls{
+    margin-left: 100px;
+    padding-left: 20px;
+}
+.controls-panel #controls #next,#prev{
+    margin: 0;
+    padding: 0;
+}
+.controls-panel #controls #play{
+    background-color: white;
+    font-size: 30px;
+    color: #000000;
+    margin: 0 50px;
+    padding: 10px 24px;
+}
+#progress {
+    width: 100%;
+    height: 50px;
+    color: white;
+}
+#progress #progress-bar {
+    width: 80%;
+    margin: 0 10px;
+}
+.music-details-panel{
+    width: 800px;
+    margin-left: 100px;
+}
+.music-details-panel #music-details{
+    margin-left: 50px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+.music-details-panel #music-details .title{
+    font-size: 30px;
+    color: #FFFFFF;
+}
+.music-details-panel #music-details .singer{
+    font-size: 20px;
+    color: rgb(255, 255, 255,0.698);
+}
+.spotify{
+    position: absolute;
+    width: 85%;
+    top: 50px;
+    left: 100px;
+    height: 200px;
+}
+.spotify .music-list-btn{
+    background-color:rgb(255, 255, 255,0.698);
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+}
+.spotify div {
+    color: rgb(255, 255, 255,0.698);
+}
+.spotify div .singer {
+    font-weight: bold;
+}
+.spotify .fa-spotify{
+    font-size: 50px;
+    color: rgb(255, 255, 255,0.698);
+    margin-right: 20px;
+}
+
+#music-image {
+    width: 200px;
+    height: 200px;
+}
+li.playing {
+    background-color: rgb(255, 255, 255,0.698);
+    color: #2a2a2a;
+}

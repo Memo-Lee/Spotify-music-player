@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background d-flex flex-column justify-content-end">
+        <audio id="audio" src=""></audio>
+        <div class="spotify  d-flex justify-content-between">
+            <div class="d-flex">
+                <i class="fa-brands fa-spotify"></i>
+                <div>
+                    <span class="text">PLAYING FROM ARTIST</span>
+                    <p class="singer"></p>
+                </div>
+            </div>
+            <div class="card-footer d-flex flex-column align-items-end">
+                <button class="btn btn-sm music-list-btn" type="button" data-bs-toggle="collapse" data-bs-target="#music-list"
+                aria-expanded="false" aria-controls="music-list">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <div id="music-list" class="collapse mt-2" >
+                    <ul class="list-group list-group-flush">
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="music-details-panel d-flex align-items-end">
+            <img id="music-image" src="" alt="">
+            <div id="music-details">
+                <p class="title"></p>
+                <p class="singer"></p>
+            </div>
+        </div>
+        <div id="progress" class="d-flex justify-content-center align-items-center">
+            <span id="current-time">0:00</span>
+            <input type="range" id="progress-bar">
+            <span id="duration">0:00</span>
+        </div>
+        <div class="controls-panel d-flex justify-content-between align-items-center">
+            <i style="color: rgb(255, 255, 255,0.698);" class="fa-regular fa-heart fa-2x"></i>
+            <div id="controls" class="d-flex align-items-center">
+                <button  id="prev" class="btn rounded-circle m-0"> 
+                    <i class="fa-solid fa-backward-step"></i>
+                </button>
+                <button id="play" class="btn rounded-circle btn-lg mx-5">
+                    <i class="fa-solid fa-play"></i>
+                </button>
+                <button id="next" class="btn rounded-circle">
+                    <i class="fa-solid fa-forward-step"></i>
+                </button>
+                
+            </div>
+            <div class="volume-panel">
+                <i id="volume" class="fa-solid fa-volume-high"></i>
+                <input type="range" id="volume-bar" max="100" value="100">
+            </div>
+        </div>
+    </div>
+
+    <script src="/music.js"></script>
+    <script src="/musicplayer.js"></script>
+    <script src="/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
